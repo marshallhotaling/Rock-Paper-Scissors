@@ -21,26 +21,33 @@
         <div class="gameBoard">
             <div class="gameSelector">
                 <div class="normal">
-                    <button class="normalButton">🪨CLASSIC✂️
-                        Rock > Scissors
-                        Paper > Rock
-                        Scissors > Paper
-                    </button>
-                    <label class="normalRules"></label>
+                    <label>🪨CLASSIC ✂️</label>
+                    <label class="buttonLabel"> Rock > Scissors</label>
+                    <label class="buttonLabel"> Paper > Rock</label>
+                    <label class="buttonLabel"> Scissors > Paper</label>
                 </div>
-
-
             </div>
+
             <div class="hard">
-                <button class="hardButton">🐉 DIFFICULT 🦠
-                    Rock > Dragon & Virus
-                    Paper > Rock & Virus
-                    Scissors > Paper & Dragon
-                    Dragon > Paper & Virus
-                    Virus > Scissors & Rock
-                </button>
-                <label class="hardRules"></label>
+                <label>🐉 DIFFICULT 🦠</label>
+                <label class="buttonLabel">Rock > Dragon & Virus</label>
+                <label class="buttonLabel">Paper > Rock & Virus</label>
+                <label class="buttonLabel">Scissors > Paper & Dragon</label>
+                <label class="buttonLabel">Dragon > Paper & Virus</label>
+                <label class="buttonLabel">Virus > Scissors & Rock</label>
             </div>
+
+
+            <div class="icons">
+                <label class="rock hidden">🪨</label>
+                <div class="blockClass">
+                    <label class="virus hidden">🦠</label>
+                    <label class="scissors hidden">✂️</label>
+                    <label class="dragon hidden">🐉</label>
+                </div>
+                <label class="paper hidden">📄</label>
+            </div>
+            <button class="backButton hidden">Choose different game</button>
 
 
         </div>
@@ -64,6 +71,6 @@
 
 
 </div>
-<script src="./src/main.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
