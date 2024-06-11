@@ -1,0 +1,119 @@
+.mainWrapper{
+    background-color: aquamarine;
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+
+}
+.leftVew{
+    background-color: mediumpurple;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+
+}
+
+.leftIcon{
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 50px;
+    display: block;
+}
+
+.leftLabel{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 50px;
+    display: block;
+}
+
+.leftWins{
+    margin-top: 40px;
+    font-size: 40px;
+    display: block;
+
+}
+
+
+
+.centerVew{
+    background-color: mediumorchid;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 400px;
+    right: 400px;
+
+
+}
+
+.centerTitle{
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 60px;
+    display: block;
+
+
+}
+.centerLabel{
+    margin-bottom: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    display: block;
+}
+
+.normalButton{
+    font-size:21px;
+    line-height:32px;
+    text-align:center;
+    height:150px;
+    width:200px
+}
+.hardButton{
+    font-size:21px;
+    line-height:32px;
+    text-align:center;
+    height:200px;
+    width:200px
+
+}
+.gameBoard{
+    width: 100%;
+    position: absolute;
+    height:600px;
+    display:block;
+}
+
+.rightVew{
+    background-color: mediumpurple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+}
+.rightIcon {
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 50px;
+    display: block;
+}
+.rightLabel{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 50px;
+    display: block;
+}
+
+.rightWins {
+    margin-top: 40px;
+    font-size: 40px;
+    display: block;
+}
+
+

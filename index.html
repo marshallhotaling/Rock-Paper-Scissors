@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+<div class="mainWrapper">
 
+    <div class="leftVew">
+        <label class="leftIcon">👶</label>
+        <label class="leftLabel">Human</label>
+        <label class="leftWins">Wins: 0</label>
+    </div>
+
+    <div class="centerVew">
+        <label class="centerTitle">Rock, Paper, Scissors</label>
+        <label class="centerLabel">Choose your game!</label>
+
+        <div class="gameBoard">
+            <div class="gameSelector">
+                <div class="normal">
+                    <button class="normalButton">🪨CLASSIC✂️
+                        Rock > Scissors
+                        Paper > Rock
+                        Scissors > Paper
+                    </button>
+                    <label class="normalRules"></label>
+                </div>
+
+
+            </div>
+            <div class="hard">
+                <button class="hardButton">🐉 DIFFICULT 🦠
+                    Rock > Dragon & Virus
+                    Paper > Rock & Virus
+                    Scissors > Paper & Dragon
+                    Dragon > Paper & Virus
+                    Virus > Scissors & Rock
+                </button>
+                <label class="hardRules"></label>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="rightVew">
+        <label class="rightIcon">💻</label>
+        <label class="rightLabel">Human</label>
+        <leble class="rightWins">wins: 0</leble>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="./src/main.js"></script>
 </body>
 </html>
