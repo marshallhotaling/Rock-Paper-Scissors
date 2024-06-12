@@ -29,8 +29,6 @@ backButton.addEventListener('click', () => {
 });
 
 function chooseIcon (myChoice){
-    console.log('my choice', myChoice)
-
     var selectedItem = ''
     if(isEasy) {
         selectedItem = ["rock","paper","scissors"][Math.floor(Math.random()*3)]
@@ -38,11 +36,8 @@ function chooseIcon (myChoice){
         selectedItem = ["rock","paper","scissors","virus","dragon"][Math.floor(Math.random()*5)]
     }
 
-    console.log('computer choice', selectedItem)
-
     if (myChoice === selectedItem) {
         centerLabel.innerHTML = `it's a draw`
-        console.log('tie')
         icons.innerHTML = `<div class="blockClass">`
         if (myChoice === 'rock') {
             icons.innerHTML += rockLabel()
@@ -80,186 +75,107 @@ function chooseIcon (myChoice){
     // rock
     if (myChoice === "rock" && selectedItem === "paper"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('rock', 'paper')
         computer += 1
     }
     if (myChoice === "rock" && selectedItem === "scissors"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('rock', 'scissors')
         human += 1
     }
     if (myChoice === "rock" && selectedItem === "dragon"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('rock', 'dragon')
         human += 1
     }
     if (myChoice === "rock" && selectedItem === "virus"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                </div>`
-        console.log("i lose ")
+        icons.innerHTML = createLayout('rocl', 'virus')
         computer += 1
     }
     // scissors
     if (myChoice === "scissors" && selectedItem === "paper"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('scissors', 'paper')
         human += 1
     }
     if (myChoice === "scissors" && selectedItem === "rock"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('scissors', 'rock')
         computer += 1
     }
     if (myChoice === "scissors" && selectedItem === "dragon"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('scissors', 'dragon')
         human += 1
     }
     if (myChoice === "scissors" && selectedItem === "virus"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('scissors', 'virus')
         computer += 1
     }
     // paper
     if (myChoice === "paper" && selectedItem === "scissors"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('paper', 'scissors')
         computer += 1
     }
     if (myChoice === "paper" && selectedItem === "rock"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('paper', 'rock')
         human += 1
     }
     if (myChoice === "paper" && selectedItem === "dragon"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                </div>`
+        icons.innerHTML = createLayout('paper', 'dragon')
         console.log("i lose")
         computer += 1
     }
     if (myChoice === "paper" && selectedItem === "virus"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('paper', 'virus')
         human += 1
     }
     // dragon
     if (myChoice === "dragon" && selectedItem === "scissors"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('dragon', 'scissors')
         computer += 1
     }
     if (myChoice === "dragon" && selectedItem === "rock"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('dragon', 'rock')
         computer += 1
     }
     if (myChoice === "dragon" && selectedItem === "paper"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('dragon', 'paper')
         human += 1
     }
     if (myChoice === "dragon" && selectedItem === "virus"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('dragon', 'virus')
         human += 1
     }
     // virus
     if (myChoice === "virus" && selectedItem === "scissors"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                    <label class="scissors" onclick="chooseIcon('scissors')">✂️</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('virus', 'scissors')
         human += 1
     }
     if (myChoice === "virus" && selectedItem === "rock"){
         centerLabel.innerHTML = `human wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                    <label class="rock" onclick="chooseIcon('rock')">🪨</label>
-                </div>`
-        console.log("i win")
+        icons.innerHTML = createLayout('virus', 'rock')
         human += 1
     }
     if (myChoice === "virus" && selectedItem === "paper"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                    <label class="paper" onclick="chooseIcon('paper')">📄</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('virus', 'paper')
         computer += 1
     }
     if (myChoice === "virus" && selectedItem === "dragon"){
         centerLabel.innerHTML = `computer wins`
-        icons.innerHTML = `<div class="blockClass">
-                    <label class="virus" onclick="chooseIcon('virus')">🦠</label>
-                    <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
-                </div>`
-        console.log("i lose")
+        icons.innerHTML = createLayout('virus', 'dragon')
         computer += 1
     }
 
@@ -296,7 +212,6 @@ function showNormalGame() {
 
 function showHardGame() {
     isEasy = false
-    console.log('true hard')
     normal.classList.add('hidden');
     hard.classList.add('hidden');
     rock.classList.remove("hidden")
@@ -314,6 +229,45 @@ function showHardGame() {
                     <label class="dragon" onclick="chooseIcon('dragon')">🐉</label>
                 </div>
                 <label class="paper" onclick="chooseIcon('paper')">📄</label>`
+}
+
+function createLayout(player, computer) {
+    let holder = `<div class="blockClass">`
+    if (player === 'rock') {
+        holder += rockLabel()
+    }
+    if (player === 'scissors') {
+        holder += scissorsLabel()
+    }
+    if (player === 'paper') {
+        holder += paperLabel()
+    }
+    if (player === 'dragon') {
+        holder += dragonLabel()
+    }
+    if (player === 'virus') {
+        holder += virusLabel()
+    }
+
+    if (computer === 'rock') {
+        holder += rockLabel()
+    }
+    if (computer === 'scissors') {
+        holder += scissorsLabel()
+    }
+    if (computer === 'paper') {
+        holder += paperLabel()
+    }
+    if (computer === 'dragon') {
+        holder += dragonLabel()
+    }
+    if (computer === 'virus') {
+        holder += virusLabel()
+    }
+
+    holder += `</div>`
+
+    return holder
 }
 
 function rockLabel() {
@@ -334,7 +288,6 @@ function paperLabel() {
 
 function chooseDifferentGame() {
     clearTimeout(timer)
-    console.log('true')
     rock.classList.add("hidden")
     paper.classList.add("hidden")
     scissors.classList.add("hidden")
