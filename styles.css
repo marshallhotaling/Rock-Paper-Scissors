@@ -135,10 +135,15 @@
     display: block;
     cursor: pointer;
 }
+.win {
+    font-size: 22px;
+    display: block;
+    cursor: pointer;
+}
 .rock{
     font-weight: bolder;
     font-size: 80px;
-    display: block;
+    display: inline-block;
     cursor: pointer;
 }
 .scissors{
@@ -150,7 +155,7 @@
 .paper{
     font-weight: bolder;
     font-size: 80px;
-    display: block;
+    display: inline-block;
     cursor: pointer;
 }
 
