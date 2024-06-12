@@ -105,9 +105,10 @@
 
 
 .hard {
+    border-radius: 10px;
     margin-top: 20px;
     display: block;
-    background-color: white;
+    background-color: mediumpurple;
     width: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -119,9 +120,10 @@
     cursor: pointer;
 }
 .normal {
+    border-radius: 10px;
     margin-top: 20px;
     display: block;
-    background-color: white;
+    background-color: mediumpurple;
     width: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -176,4 +178,14 @@
 
 .blockClass {
     display: block;
+}
+.backButton{
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    background-color: mediumpurple;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
 }
